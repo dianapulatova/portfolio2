@@ -1,0 +1,27 @@
+
+.nav-color  {
+    background-color: thistle;
+    ;
+}
+.link-color{
+    color: teal;
+}
+
+footer {
+    background-color: thistle;
+}
+
+#icons {
+    font-size: 35px;
+}
+#img {
+    height: 300px ;
+    width: 300px;
+}
+
+.name {
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+    
+}
+  
