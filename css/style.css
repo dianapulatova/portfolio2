@@ -1,7 +1,7 @@
 
 .nav-color  {
     background-color:rgb(54, 52, 52);
-    ;
+    
 }
 .link-color{
     color: teal;
@@ -13,6 +13,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 60px;
     color: white;
     text-align: center;
 }
