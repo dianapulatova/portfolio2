@@ -1,126 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <!-- added the link from fontawesome for the icons -->
-     <script
-     src="https://kit.fontawesome.com/e84d18009c.js"
-     crossorigin="anonymous"
-   ></script>
-   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    
-    <!-- <nav class="navbar navbar-expand-lg navbar-light nav-color">
-      <a class="navbar-brand name" href="#">Diana Pulatova</a>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active link-color" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active link-color" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active link-color" href="index.html">About</a>
-        </li>
-      </ul>
-    </nav> -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-color">
-    <a class="navbar-brand" href="#">Diana Pulatova</a>
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#custom-collapse" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button> -->
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" active link-color href="contact.html">Contact<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" active link-colot href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" active link-color href="index.html">About</a>
-        </li>
-      </ul>
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-    <br />
-    <br />
-    <br />
-    
-    <div class="container">
+       <!-- font-awesome cdn by MAX cdn -->
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+
+       <!-- materialize ICONS -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       
+       <!-- link to cusotom style.css -->
+       <link rel="stylesheet" href="assets/css/style.css">
       
-      <div class="card">
-        <!-- pay attention for card body  -->
-        <div class="card-body">
-          <h5 class="card-title">About Me</h5>
-          <hr />
-          <br />
-          <div class="row">
-            <!-- col xs or sm  4   -->
-            <div class="col-xs-4 col-sm-4">
-              <img
-                id="img"
-                src="https://ca.slack-edge.com/T0159E8269Z-U015DHN3RQT-809cdf143da5-512 "
-                 class= "card-img-top"
-                alt="me"
-              />
+       
+</head>
+<body>
+    <!-- materializecss - navbar -->
+    <nav class="nav-extended deep-purple lighten-4">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><span class="logo purple-text text-lighten-2"></span>dp</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#portfolio-projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav class="side-nav-color" >
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#portfolio-projects">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!--   parallax conatiner - img - quick intro-->
+    <div class="parallax-container valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col 18 s12 white-text">
+            <h4 class="thin-text left-alighn  deep-purple-text text-lighten-3 valign ">Hi! I'm Diana, Full Stack Software Engineer!</h4>
+          </div>
+        </div>
+
+        <!-- contact button -->
+        <div class="row">
+          <div class="col 14">
+            <a href="mailto:dianapulatovaa@gmail.com" class="waves-effect btn-large hoverable  deep-purple lighten-4 ">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="assets/img/sky2.jpg" style="transform: translate3d( 361.114px, 0px); opacity: 1;"></div>
+    </div>
+
+    <!-- Slected works portfolio section -->
+    <!-- <div class="container">
+      <h2 class="section-header center">Selected works</h2>
+      <div class="row">
+        <div class="col l4 m8 offset-m2 s2">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://1.bp.blogspot.com/-enwYKgcyhpk/XwGTECr7g8I/AAAAAAAAD6k/qzhS2rA2i8ktzBg2KM1MTOkgH-dvXuVOACLcBGAsYHQ/s400/1.jpg">
             </div>
-            <div class="col-xs-8 col-sm-8">
-              <p class="card-text">
-                Hello! My name is Diana.  
-
-                I'm an ambivert who has ENTJ and INTJ personality types and passionate about coding, robotics, and machine learning!
-
-                I want to know the personality type of you as well, leave a message. 
-              </p>
-              <br>
-              <br>
-              <br>
-              <p> Think we could collaborate with a new project or play a tennis together? Feel free to connect with me on LinkedIn and GitHub. </p>
-
-
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Blackpink<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div> -->
+        <!--  -->
+        <!-- <div class="col l4 m8 offset-m2 s2">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://1.bp.blogspot.com/-enwYKgcyhpk/XwGTECr7g8I/AAAAAAAAD6k/qzhS2rA2i8ktzBg2KM1MTOkgH-dvXuVOACLcBGAsYHQ/s400/1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Blackpink<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div> -->
+        <!--  -->
+        <!-- <div class="col l4 m8 offset-m2 s2">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://1.bp.blogspot.com/-enwYKgcyhpk/XwGTECr7g8I/AAAAAAAAD6k/qzhS2rA2i8ktzBg2KM1MTOkgH-dvXuVOACLcBGAsYHQ/s400/1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Blackpink<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
             </div>
           </div>
         </div>
       </div>
+    </div> -->
+    <!-- divider line -->
+    <div class="container">
+      <div class="divider"></div>
     </div>
-    <br />
-    <br />
-    <br />
-    <!-- footer  -->
 
-  <footer class="blog-footer text-center">
-    <a id="icons"
-      class="text-center"
-      href="https://www.linkedin.com/in/diana-pulatova/">
-      <i class="fab fa-linkedin"></i ></a>
-      <a id="icons" class="text-center" href="https://github.com/dianapulatova">
-      <i class="fab fa-github"></i >
-   </a>
-      <p class="text-center">
-        <a href="#">Back to top</a>
-      </p>
-  </footer>
-  </body>
+    
+    <!--  -->
+    <sectio id="portfolio-projects">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-header"> Portfolio</h2>
+        </div>
+      </div>
+        <!-- CARD BLUE -- z-depth is for shadow <i class="fas fa-sun-cloud"></i> -->
+        <div class="row">
+          <div class="col l6 m12 s12">
+           <div class="card medium cyan lighten-5 z-depth-2">
+             <div class="card-content white-text">
+               <h3 class="center-align"> <i class="fas fa-cloud-sun fa-3x"></i></h3>
+               <div class="divider"></div>
+               <span class="card-title orange-text">Weather App</span>
+               <p class="orange-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iure optio quo dolor in. Odio molestiae accusantium perferendis perspiciatis! Sed, ullam. Vel illo et repudiandae doloremque labore quibusdam eligendi debitis?</p>
+             </div>
+             <!-- card action link section at the bottom of the card -->
+             <div class="card-action">
+              <a class="orange-text" href="https://dianapulatova.github.io/Weather-Dashboard/">Find out more!</a>
+            </div>
+           </div>
+         </div>
+        <!-- Card PINK --> 
+       <div class="row">
+        <div class="col l6 m12 s12">
+          <div class="card  medium red lighten-5 z-depth-2">
+            <div class="card-content white-text">
+              <h3 class="center-align"><i class="material-icons large lighten-5 ">adb</i></h3>
+              <div class="divider white"></div>
+              <span class="card-title orange-text ">Blink</span>
+              <p class="orange-text">Blackpink is a popular K-Pop girl group! And they are my favorite band. Recenly, they realsed a new song: "How You Like That" which broke the internet. Find their latest song here on BLINK.</p>
+            </div>
+            <!-- card action link at the bottom of the card -->
+             <div class="card-action">
+              <a href="https://dianapulatova.github.io/BLINK/">Find out more!</a>
+              <!-- <a href="#">This is a link</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- CARD PURPLE -->
+        <div class="row">
+          <div class="col l6 m12 s12">
+           <div class="card medium purple lighten-5 z-depth-2">
+             <div class="card-content white-text">
+               <h3 class="center-align"> <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i></i></h3>
+               <div class="divider"></div>
+               <span class="card-title orange-text">NUZ</span>
+               <p class="orange-text">NUZ is a group built news/article summarizer app. 
+                Tools we used: Diffbot, News API, HTML, CSS, Tachyon CSS framework, MeaningCloud
+                </p>
+             </div>
+             <!-- card action link section at the bottom of the card -->
+             <div class="card-action">
+              <a href="https://dianapulatova.github.io/NUZ/">Find out more!</a>
+            </div>
+           </div>
+         </div>
+         <!-- CARD YELLOW -->
+         <div class="row">
+          <div class="col l6 m12 s12">
+           <div class="card medium amber lighten-4 z-depth-2">
+             <div class="card-content white-text">
+               <h3 class="center-align"> <i class="fas fa-clipboard-list fa-3x" aria-hidden="true"></i></i></h3>
+               <div class="divider"></div>
+               <span class="card-title orange-text">Work Day Scheduler</span>
+               <p class="orange-text" >Work Day Scheduler provides you with 9am to 5pm hours that you can add your work schedules.</p>
+             </div>
+             <!-- card action link section at the bottom of the card -->
+             <div class="card-action">
+              <a href="https://dianapulatova.github.io/day-planner/">Find out more!</a>
+            </div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+     <!-- CTA  -->
+     <div class="parallax-container valign-wrapper ">
+      <div class="container">
+        <!-- centering the button -->
+        <div  class="row center">
+          <div class="col l10 offset-11">
+            <br>
+            <br>
+            <h2 class="-alighn  purple-text text-lighten-3 cta">Interested in working together?</h2>
+            <a href="mailto:dianapulatovaa@gmail.com" class="center btn-large hoverable purple lighten-4"> get in touch!</a>
+          </div>
+        </div>
+      </div>
+      <div class="parallax center"><img src="assets/img/sky2.jpg" style="transform: translate3d( 361.114px, 0px); opacity: 1;"></div>
+    </div>
+
+    <!--  -->
+  
+  <!-- About me -->
+   <section id="about-me">
+    <div class="row container">
+      <div class="row">
+        <h2 xlass="section-header ">About Me</h2>
+      </div>
+      <div class="col l4 m16 s16">
+
+        <img
+        id="img"
+        src="assets/img/diana.png"
+         class= "card-img-top"
+        alt="me"/>
+      </div>
+      <div class="col l4 m16 s16">
+        <p id="bio-text-size" class="grey-text text-darken-3 lighten-3 larger">Hello! My name is Diana. I'm passionate about coding, robotics, and machine learning! 
+          <br>
+          <br>
+          Think we could collaborate with a new project or play a tennis together? Feel free to connect with me on LinkedIn <a id="icons"
+          class="text-center"
+          href="https://www.linkedin.com/in/diana-pulatova/">
+          <i class="fab fa-linkedin"></i ></a> and GitHub
+          <a id="icons" class="text-center" href="https://github.com/dianapulatova">
+            <i class="fab fa-github"></i >
+         </a>
+        .</p>
+      </div>
+   </section>
+     
+     
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="parallax"><img src="assets/img/sky.jpg" style="transform: translate3d( 361.114px, 0px); opacity: 1;"></div>
+  </div>
+  <!-- END OF PARALLAX -->
+
+   <!-- CONTACT SECTION -->
+   <section id="contact">
+    <div class="container">
+      <div class="row">
+        <h2 xlass="section-header ">Contact</h2>
+      </div>
+    </div>
+    <div class="container  contact ">
+      <div class="row">
+        <div class="col 18 offset-12 m12 s12">
+          <!--Text input -->
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="First Name" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholde="Email" id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input  id="text" type="text" class="validate">
+                  <label for="info">Tell me about yourself.</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col 14">
+                  <a class="waves-effect btn-large hoverable  deep-purple lighten-4 ">Submit</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+   <!-- FOOTER -->
+ <footer class="page-footer deep-purple lighten-4 ">
+  <div class="container">
+   
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text"></h5>
+        
+        <p class="grey-text text-darken-4"></p>
+        <p> Name: Diana Pulatova</p>
+        <p>Titles: Biochemist | Software Engineer</p>
+        <p>Phone Number: +1(917) 708 - 0907</p>
+        <p> Locations: NYC | LA</p>
+        <p></p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <!-- <h5 class="grey-text">Links</h5> -->
+        <ul>
+          <li><a class=" white-text" href="https://www.linkedin.com/in/diana-pulatova/">LinkedIn</a></li>
+          <li><a class="white-text" href="https://github.com/dianapulatova">GitHub</a></li>
+          <li><a class="white-text" href="https://dianapulatova.github.io/DP/">Portfolio</a></li>
+          <li><a class="white-text" href="https://docs.google.com/document/d/1ZX_-escS4iZyuZURH4YDN8esIn8slEurRIj_pdwzRZM/edit#heading=h.y8d39elwmfru">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright purple lighten-5 deep-purple-text">
+    <div class="container center">
+     <p> &copy; 2020 Copyright Diana Pulatova, All Rights Reserved.</p>
+     <a href="#" class="grey-text text-darken-4 right"></a>Privicy Policy</a>
+    </div>
+  </div>
+</footer> 
+
+   
+     
+     
+    
+
+
+
+
+  
+
+  
+
+    
+
+          <!-- FOOTER -->
+          <!-- <footer class="blog-footer text-center">
+            <a id="icons"
+              class="text-center"
+              href="https://www.linkedin.com/in/diana-pulatova/">
+              <i class="fab fa-linkedin"></i ></a>
+              <a id="icons" class="text-center" href="https://github.com/dianapulatova">
+              <i class="fab fa-github"></i >
+           </a>
+              <p class="text-center">
+                <a href="#">Back to top</a>
+              </p>
+          </footer> -->
+
+       <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       <!-- added the link from fontawesome for the icons -->
+        <script
+        src="https://kit.fontawesome.com/e84d18009c.js" crossorigin="anonymous"></script>
+       <!-- link to custom js file -->
+       <script type="text/javascript" src="assets/js/script.js" ></script>
+</body>
+
+     
 </html>
