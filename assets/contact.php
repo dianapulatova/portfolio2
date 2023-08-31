@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   mail($to, $subject, $message_body, $headers);
 
-  // You can also redirect to a thank you page or display a success message
+  // Redirect to the index.html page
   header("Location: index.html");
   exit;
 }
