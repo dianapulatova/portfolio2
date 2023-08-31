@@ -15,6 +15,7 @@
        
        <!-- link to custom style.css -->
        <link rel="stylesheet" href="assets/css/style.css">
+       <link rel="stylesheet" href="styles.css">
       
        
 </head>
@@ -124,7 +125,7 @@
         </div>
       </div>
          <!-- CARD PURPLE -->
-         <div class="row">
+         <!-- <div class="row">
           <div class="col l6 m12 s12">
            <div class="card medium purple lighten-5 z-depth-2">
              <div class="card-content white-text">
@@ -134,13 +135,13 @@
                <p class=" blue-text">Yummy Burger is created with MySQL, Node, Express, Handlebars and a homemade ORM.
                 </p>
              </div>
-             <!-- card action link section at the bottom of the card -->
-             <div class="card-action">
+             card action link section at the bottom of the card -->
+             <!-- <div class="card-action">
               <a class="purple-text" href="https://yummy-burger-app.herokuapp.com/"> Yummy Burger App</a>
               <a class="purple-text" href="https://github.com/dianapulatova/yummy-burger"> Yummy Burger GitHub Repo</a>
             </div>
            </div>
-         </div>
+         </div> -->
         <!-- CARD BLUE -- z-depth is for shadow <i class="fas fa-sun-cloud"></i> -->
         <div class="row">
           <div class="col l6 m12 s12">
@@ -211,32 +212,14 @@
         </div>
       </div>
     </section>
-    <!--  -->
+   
 
-    <!--  -->∂
-     <!-- CTA  -->
-     <div class="parallax-container valign-wrapper ">
-      <div class="container">
-        <!-- centering the button -->
-        <div  class="row center">
-          <div class="col l10 offset-11">
-            <br>
-            <br>
-            <h2 class="-alighn  purple-text text-lighten-3 cta">Interested in working together?</h2>
-            <a href="mailto:dianapulatovaa@gmail.com" class="center btn-large hoverable purple lighten-4"> get in touch!</a>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="parallax center"><img src="assets/img/" style="transform: translate3d( 361.114px, 0px); opacity: 1;"></div> -->
-    </div>
-
-    <!--  -->
   
   <!-- About me -->
    <section id="about-me" class="grey lighten-5">
     <div class="row container ">
       <div class="row">
-        <h2 class="section-header ">About Me</h2>
+        <h2 class="section-header -alighn  purple-text text-lighten-3 cta ">About Me</h2>
       </div>
       <div class="col l4 m16 s16">
 
@@ -270,52 +253,54 @@
   <!-- END OF PARALLAX -->
 
    <!-- CONTACT SECTION -->
-   <section id="contact">
-    <div class="container">
-      <div class="row">
-        <h2 class="section-header ">Contact</h2>
-      </div>
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="section-header align purple-text text-lighten-3 cta">Contact</h2>
     </div>
-    <div class="container  contact ">
-      <div class="row">
-        <div class="col 18 offset-12 m12 s12">
-          <!--Text input -->
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <input placeholder="First Name" id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                  <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
-                </div>
+  </div>
+  <div class="container contact">
+    <div class="row">
+      <div class="col s12 m12 l8 offset-l2">
+        <!-- Text input -->
+        <div class="row">
+          <form class="col s12" action="contact.php" method="post">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input placeholder="Email" id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
+              <div class="input-field col s6">
+                <input placeholder="" id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input placeholder="" id="text" type="text" class="validate">
-                  <label for="email">Tell me about yourself</label>
-                </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="" id="email" type="email" class="validate">
+                <label for="email">Email</label>
               </div>
-              <div class="row">
-                <div class="col 14">
-                  <input type="hidden" name="action" value="contact.php">
-                  <input type="submit" class="waves-effect btn-large hoverable  deep-purple lighten-4 " value="Submit">
-                </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="" id="text" type="text" class="validate">
+                <label for="text">Tell me about yourself</label>
               </div>
-            </form>
-          </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <input type="submit" class="waves-effect btn-large hoverable deep-purple lighten-4" value="Submit">
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 </section>
+
+
+
 
    <!-- FOOTER -->
  <footer class="page-footer deep-purple lighten-4 ">
